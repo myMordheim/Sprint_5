@@ -1,4 +1,3 @@
-order_page_url = 'https://stellarburgers.nomoreparties.site/' # URL Консруктор
 order_button = ".//button[@class='button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg']" # Кнопка оформить заказ
 selector_sauce = ".//span[text() = 'Соусы']" # Кнопка перехода к разделу Соусов
 selector_fillings = ".//span[text() = 'Начинки']" # Кнопка перехода к разделу Начинки

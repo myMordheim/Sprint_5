@@ -2,14 +2,14 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from locators.login_page import *
 from locators.personal_account_page import *
+from URLs import *
 from data import *
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
-class Test_exit_from_account():
+class Test_Exit_From_Account():
 
-    def test_exit_from_acoount(self):
-        driver = webdriver.Chrome()
+    def test_exit_from_acoount(self, driver):
         driver.get(login_page_url)
         driver.find_element(By.XPATH, login_email_input).send_keys(user_data[0])
         driver.find_element(By.XPATH, login_password_input).send_keys(user_data[1])
@@ -20,4 +20,3 @@ class Test_exit_from_account():
         driver.find_element(By.XPATH, exit_button).click()
         WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((By.XPATH, login_enter)))
         assert driver.current_url == login_page_url
-        driver.quit()
