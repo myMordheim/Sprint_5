@@ -7,7 +7,7 @@ from data import *
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
-class Test_Constructor_Page_Test():
+class TestConstructorPage():
 
     def test_transfer_to_bun(self, driver):
         driver.get(login_page_url)

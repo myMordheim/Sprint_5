@@ -7,7 +7,7 @@ from data import *
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
-class Test_Transfer_Into_Personal_Account():
+class TestTransferIntoPersonalAccount():
 
     def test_transfer_into_PA(self, driver):
         driver.get(login_page_url)

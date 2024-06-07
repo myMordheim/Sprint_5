@@ -9,7 +9,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
 
-class Test_Registration_Page():
+class TestRegistrationPage():
 
     def test_correct_registration(self, driver):
         driver.get(registration_page_url)

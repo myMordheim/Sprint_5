@@ -10,7 +10,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
 
-class Test_Login_Page():
+class TestLoginPage():
 
     def test_login_from_main_page(self, driver):
         driver.get(login_page_url)

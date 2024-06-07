@@ -7,7 +7,7 @@ from data import *
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
-class Test_Exit_From_Account():
+class TestExitFromAccount():
 
     def test_exit_from_acoount(self, driver):
         driver.get(login_page_url)
